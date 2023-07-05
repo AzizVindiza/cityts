@@ -32,7 +32,7 @@
     "eject": "react-scripts eject",
     "component": "generate-react component",
     "page": "generate-react component --type=page",
-    "page": "generate-react component --type=layout"
+    "layout": "generate-react component --type=layout"
   },
   "eslintConfig": {
     "extends": [
