@@ -1,0 +1,67 @@
+@import "fonts/Gilroy/stylesheet.css"
+*,*:before,*:after
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+  text-decoration: none
+  list-style-type: none
+  resize: none
+  outline: none
+  border: none
+  font-family: "Gilroy",sans-serif
+body
+  scroll-behavior: smooth
+  user-select: none
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  padding: 115px 0 0 0
+img
+  width: 100%
+  height: auto
+.container
+  max-width: 1440px - 135 * 2
+  margin: 0 auto
+.container_fluid
+  width: 100%
+
+@media (max-width: 1201px)
+  .container
+    max-width: 1201px - 50 * 2
+
+
+@media (max-width: 1025px)
+  .container
+    max-width: 1025px - 50 * 2
+
+
+
+@media (max-width: 770px)
+  body
+    padding: 65px 0 0 0
+  .container
+    max-width: 769px - 50 * 2
+  .scroll-container
+    padding: 50px 0 0  0
+
+
+@media (max-width: 482px)
+  .container
+    max-width: 481px - 25 * 2
+  .scroll-container
+    padding: 50px 0 0  0
+
+@media (max-width: 394px )
+  .container
+    max-width: 393px - 20 * 2
+
+
+
+
+//
+//@media (max-width: 1201px)
+//@media (max-width: 1025px)
+//@media (max-width: 770px)
+//@media (max-width: 482px)
+//@media (max-width: 394px )
+//

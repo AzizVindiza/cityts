@@ -30,9 +30,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "component": "generate-react component",
-    "page": "generate-react component --type=page",
-    "layout": "generate-react component --type=layout"
+    "c": "generate-react component",
+    "p": "generate-react component --type=page",
+    "s": "generate-react component --type=section"
   },
   "eslintConfig": {
     "extends": [

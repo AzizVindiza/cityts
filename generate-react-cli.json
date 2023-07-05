@@ -6,6 +6,12 @@
   "testLibrary": "Testing Library",
   "component": {
     "default": {
+      "customTemplates": {
+        "component": "templates/component/TemplateName.tsx",
+        "style": "templates/component/TemplateName.module.sass",
+        "test": "templates/component/TemplateName.test.tsx",
+        "lazy": "templates/component/TemplateName.lazy.tsx"
+      },
       "path": "src/components",
       "withStyle": true,
       "withTest": true,
@@ -13,14 +19,25 @@
       "withLazy": true
     },
     "page": {
+      "customTemplates": {
+        "component": "templates/page/TemplateName.tsx",
+        "test": "templates/page/TemplateName.test.tsx",
+        "lazy": "templates/page/TemplateName.lazy.tsx"
+      },
       "path": "src/pages",
-      "withStyle": true,
+      "withStyle": false,
       "withTest": true,
       "withStory": false,
       "withLazy": true
     },
-    "layout": {
-      "path": "src/layout",
+    "section": {
+      "customTemplates": {
+        "component": "templates/section/TemplateName.tsx",
+        "style": "templates/section/TemplateName.module.sass",
+        "test": "templates/section/TemplateName.test.tsx",
+        "lazy": "templates/section/TemplateName.lazy.tsx"
+      },
+      "path": "src/pages/sections",
       "withStyle": true,
       "withTest": true,
       "withStory": false,
