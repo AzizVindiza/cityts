@@ -1,0 +1,6 @@
+@font-face {font-family: "ocr";
+    src: url("6a9c6944fe8451dd397fe9d0763a4c88.eot"); /* IE9*/
+    src: url("6a9c6944fe8451dd397fe9d0763a4c88.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("6a9c6944fe8451dd397fe9d0763a4c88.woff2") format("woff2"), /* chrome、firefox */
+    url("6a9c6944fe8451dd397fe9d0763a4c88.ttf") format("truetype") /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}

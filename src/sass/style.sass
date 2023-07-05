@@ -1,4 +1,5 @@
-@import "fonts/Gilroy/stylesheet.css"
+@import url('https://fonts.cdnfonts.com/css/gotham')
+@import "fonts/ocr/ocr.css"
 *,*:before,*:after
   padding: 0
   margin: 0
@@ -17,7 +18,8 @@ body
   text-rendering: optimizeLegibility
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
-  padding: 115px 0 0 0
+  padding: 92.33px 0 0 0
+  font-family: 'Gotham', sans-serif
 img
   width: 100%
   height: 100%
@@ -54,3 +56,11 @@ svg
 @media (min-width: 1024px)
 
 @media (min-width: 1440px)
+
+.ocr
+  font-weight: 400
+  font-size: 30px
+  line-height: 41px
+  font-family: "ocr",sans-serif
+  text-shadow: 0 -3px 0px #000, 0px 4px 8px rgba(0,0,0,0.35), 0px 3px 30px rgba(0,0,0,0.15)
+  color: #ffc55a
