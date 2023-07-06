@@ -10,6 +10,7 @@ export interface HeaderProps {
 const Header = ({}: HeaderProps) => {
      const {activeMenu} = useContext(StateContext) ?? {}
     // Используем оператор нулевого слияния, чтобы работать с null в Context
+
     return (
 
         <header className={"header"} data-testid="Header">
