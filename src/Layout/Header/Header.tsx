@@ -8,7 +8,8 @@ export interface HeaderProps {
 }
 
 const Header = ({}: HeaderProps) => {
-     const states = useContext(StateContext)
+     const {activeMenu} = useContext(StateContext) ?? {}
+    // Используем оператор нулевого слияния, чтобы работать с null в Context
     return (
 
         <header className={"header"} data-testid="Header">
@@ -21,7 +22,7 @@ const Header = ({}: HeaderProps) => {
                     <h2 className="header__h2">
                         дисконтная карта
                         для скидок
-                        {states!.activeMenu ? "hello": "world"}
+                        {activeMenu ? "hello" : "word"}
                     </h2>
                 </h1>
                 <HamburgerToggle/>
