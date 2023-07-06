@@ -1,9 +1,10 @@
-// @ts-ignore
-import styles from './NotFoundPage.module.sass';
+import './NotFoundPage.sass';
 
+export interface NotFoundPageProps {
+}
 
-const NotFoundPage = () => (
-    <main className={styles.notFoundPage} data-testid="NotFoundPage">
+const NotFoundPage = ({}: NotFoundPageProps) => (
+    <main className={"notFoundPage"} data-testid="NotFoundPage">
         <div className="container">
             NotFoundPage Section
         </div>

@@ -1,7 +1,10 @@
-import styles from './Footer.module.sass';
+import './Footer.sass';
 
-const Footer = () => (
-    <footer className={styles.footer} data-testid="Footer">
+export interface FooterProps {
+}
+
+const Footer = ({}: FooterProps) => (
+    <footer className={"footer"} data-testid="Footer">
         <div className="container">
             Footer Section
         </div>

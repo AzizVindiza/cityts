@@ -1,11 +1,10 @@
-// @ts-ignore
-import styles from './TemplateName.module.sass';
+import './TemplateName.sass';
 
 export interface TemplateNameProps {
 }
 
 const TemplateName = ({}: TemplateNameProps) => (
-    <section className={styles.templateName} data-testid="TemplateName">
+    <section className={"templateName"} data-testid="TemplateName">
         <div className="container">
             TemplateName Section
         </div>

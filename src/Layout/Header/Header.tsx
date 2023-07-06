@@ -1,9 +1,10 @@
-import styles from './Header.module.sass';
+import './Header.sass';
 
+export interface HeaderProps {
+}
 
-
-const Header = () => (
-    <header className={styles.header} data-testid="Header">
+const Header = ({}: HeaderProps) => (
+    <header className={"header"} data-testid="Header">
         <div className="container">
             Header Section
         </div>

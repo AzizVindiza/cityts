@@ -1,14 +1,14 @@
 {
   "usesTypeScript": true,
   "usesStyledComponents": false,
-  "usesCssModule": true,
+  "usesCssModule": false,
   "cssPreprocessor": "sass",
   "testLibrary": "Testing Library",
   "component": {
     "default": {
       "customTemplates": {
         "component": "templates/component/TemplateName.tsx",
-        "style": "templates/component/TemplateName.module.sass",
+        "style": "templates/component/TemplateName.sass",
         "test": "templates/component/TemplateName.test.tsx",
         "lazy": "templates/component/TemplateName.lazy.tsx"
       },
@@ -33,7 +33,7 @@
     "section": {
       "customTemplates": {
         "component": "templates/section/TemplateName.tsx",
-        "style": "templates/section/TemplateName.module.sass",
+        "style": "templates/section/TemplateName.sass",
         "test": "templates/section/TemplateName.test.tsx",
         "lazy": "templates/section/TemplateName.lazy.tsx"
       },

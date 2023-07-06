@@ -1,8 +1,7 @@
-import FirstSection from "./FirstSection/FirstSection";
 
-const HomePage = () => (
+export const HomePage = () => (
     <main className={"homePage"} data-testid="HomePage">
-        <FirstSection/>
+        HomePage
     </main>
 );
 
