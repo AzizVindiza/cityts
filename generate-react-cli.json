@@ -9,20 +9,16 @@
       "customTemplates": {
         "component": "templates/component/TemplateName.tsx",
         "style": "templates/component/TemplateName.sass",
-        "test": "templates/component/TemplateName.test.tsx",
-        "lazy": "templates/component/TemplateName.lazy.tsx"
       },
       "path": "src/components",
       "withStyle": true,
-      "withTest": true,
+      "withTest": false,
       "withStory": false,
-      "withLazy": true
+      "withLazy": false
     },
     "page": {
       "customTemplates": {
-        "component": "templates/page/TemplateName.tsx",
-        "test": "templates/page/TemplateName.test.tsx",
-        "lazy": "templates/page/TemplateName.lazy.tsx"
+        "component": "templates/page/TemplateName.tsx"
       },
       "path": "src/pages",
       "withStyle": false,
@@ -33,9 +29,7 @@
     "section": {
       "customTemplates": {
         "component": "templates/section/TemplateName.tsx",
-        "style": "templates/section/TemplateName.sass",
-        "test": "templates/section/TemplateName.test.tsx",
-        "lazy": "templates/section/TemplateName.lazy.tsx"
+        "style": "templates/section/TemplateName.sass"
       },
       "path": "src/pages/sections",
       "withStyle": true,
