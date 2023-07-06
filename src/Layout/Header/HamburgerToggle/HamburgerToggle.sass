@@ -1,0 +1,33 @@
+@import "src/sass/base/mixins"
+.hamburgerToggle
+  display: flex
+  flex-direction: column
+  row-gap: 7px
+  align-items: flex-end
+  &__line
+    width: 24px
+    height: 2px
+    background: #fff
+    &:nth-child(2)
+      display: none
+  &_active
+    z-index: 1000
+    transition: 2s ease-in
+    .hamburgerToggle
+      &__line
+        position: absolute
+        transition: 0.3s
+        &:first-child
+          transform: rotate(-45deg)
+        &:last-child
+          transform: rotate(45deg)
+        &_short
+          display: none
+
+@media (min-width: 640px)
+
+@media (min-width: 768px)
+
+@media (min-width: 1024px)
+
+@media (min-width: 1440px)

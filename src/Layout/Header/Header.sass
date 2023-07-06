@@ -1,9 +1,24 @@
 @import "src/sass/base/mixins"
 .header
-  .container
-    padding: 10px 0
-  .h2
-    @include text(500,48px,45px,red)
+  background: #000000
+  &__container
+   display: flex
+   align-items: center
+   justify-content: space-between
+  &__h1
+    display: flex
+    align-items: center
+
+    column-gap: 20px
+  &__logo
+    width: 80px
+    height: 80px
+  &__h2
+    @include text(700,16px,normal,#fff)
+    text-transform: uppercase
+    width: 170px
+
+
 
 
 @media (min-width: 640px)
