@@ -1,15 +1,24 @@
 @import "src/sass/base/mixins"
 .hamburgerToggle
+  width: 54px
+  height: 34px
+  padding: 8px 11px
   display: flex
-  flex-direction: column
   row-gap: 7px
-  align-items: flex-end
-  &__line
-    width: 24px
-    height: 2px
-    background: #fff
-    &:nth-child(2)
-      display: none
+  align-items: center
+  justify-content: center
+  border-radius: 19.225px
+  background: #EC9611
+  box-shadow: 6.942361831665039px 1.602083444595337px 2.136111259460449px 0 rgba(255, 255, 255, 0.26) inset, -2.136111259460449px -3.738194704055786px 2.136111259460449px 0px rgba(255, 255, 255, 0.25) inset, -5.340278148651123px 5.340278148651123px 2.136111259460449px 0px #FFA852 inset, 5.340278148651123px -5.340278148651123px 2.136111259460449px 0px #EC9611 inset, -5.340278148651123px 10.680556297302246px 5.340278148651123px 0px rgba(255, 255, 255, 0.25) inset, 5.340278148651123px -2.6701390743255615px 12.816667556762695px 0px #EC9611 inset
+  &_second
+    width: 88px
+    gap: 5px
+    display: none
+  &__title
+      @include text(500,11px,8.544,#fff)
+  &__block
+    width: 20px
+    height: 20px
   &_active
     z-index: 1000
     transition: 2s ease-in
@@ -17,6 +26,8 @@
       &__line
         position: absolute
         transition: 0.3s
+        &:nth-child(2)
+         display: none
         &:first-child
           transform: rotate(-45deg)
         &:last-child
@@ -27,6 +38,11 @@
 @media (min-width: 640px)
 
 @media (min-width: 768px)
+  .hamburgerToggle
+    display: none
+    &_second
+      display: flex
+
 
 @media (min-width: 1024px)
 

@@ -1,22 +1,28 @@
 import React, {createContext , useState} from 'react';
 
 type StateContextType = {
-    activeMenu: boolean;
-    setActiveMenu: React.Dispatch<React.SetStateAction<boolean>>;
+    changeBurger: boolean;
+    setChangeBurger: React.Dispatch<React.SetStateAction<boolean>>;
+    category : number
+    setCategory :React.Dispatch<React.SetStateAction<number>>
 };
+// type states and function
 
 export const StateContext = createContext<null | StateContextType>(null);
+// create variable to use UseContext
 
 
 type ContextProviderProps = {
     children: React.ReactNode;
 };
+//type children
 
 export const ContextProvider = ({ children }: ContextProviderProps) => {
-    const [activeMenu, setActiveMenu] = useState(false);
+    const [changeBurger, setChangeBurger] = useState(false);
+    const [category, setCategory] = useState(0);
     const value = {
-        activeMenu,
-        setActiveMenu,
+        changeBurger, setChangeBurger,category, setCategory
+
     };
 
     return (

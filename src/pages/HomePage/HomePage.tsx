@@ -1,8 +1,18 @@
+// import {useGetPokemonByNameQuery} from "../../redux/api";
 
-export const HomePage = () => (
-    <main className={"homePage"} data-testid="HomePage">
-        HomePage
-    </main>
-);
+import SectionSwiperFirst from "./SectionSwiperFirst/SectionSwiperFirst";
+import SectionSearch from "./SectionSearch/SectionSearch";
+import SectionCategory from "./SectionCategory/SectionCategory";
+
+
+export const HomePage = () => {
+    return (
+        <main className={"homePage"}>
+            <SectionSwiperFirst />
+            <SectionSearch/>
+            <SectionCategory/>
+        </main>
+    );
+}
 
 export default HomePage;
