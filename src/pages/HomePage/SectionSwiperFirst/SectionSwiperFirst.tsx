@@ -8,11 +8,11 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 // import React, { useRef, useState } from 'react';
 // import required modules
 import {FreeMode, Pagination} from 'swiper/modules';
-import React from "react";
+import React, {useContext} from "react";
+import {StateContext} from "../../../Context/Context";
 
 
 interface SwiperTypescript {
-    children: Element[];
     slidesPerView: number;
     spaceBetween: number;
     freeMode: boolean;
@@ -21,27 +21,28 @@ interface SwiperTypescript {
     }
     ;
     modules: any[];
-    className: string;
 }
 export const SectionSwiperFirst  = () => {
-    const arr : string[] = ['Афиши', 'Акции', 'Куда сходить?', 'Сертификаты', 'Промокоды', 'Промокоды', 'Промокоды']
-
+    const context = useContext(StateContext)
+    const arr : string[] = ['Афиши', 'Акции', 'Куда сходить?', 'Сертификаты', 'Промокоды', 'Для бизнеса', 'Q&A']
+    const swiperParams : SwiperTypescript = {
+        slidesPerView : 3,
+        spaceBetween : 20,
+        freeMode: true,
+        pagination : {
+            clickable: true,
+        },
+        modules : [FreeMode, Pagination]
+    }
     return (
         <main className={"sectionSwiperFirst"}>
             <div className="sectionSwiperFirst__container container">
-                <Swiper
-                    // slidesPerView={3}
-                    // spaceBetween={30}
-                    // freeMode={true}
-                    // pagination={{
-                    //     clickable: true,
-                    // }}
-                    // modules={[FreeMode, Pagination]}
+                <Swiper {...swiperParams}
                     className="mySwiper"
                 >
                     {
-                        arr.map((item) => (
-                            <SwiperSlide className={'sectionSwiperFirst__slide'}>{item}</SwiperSlide>
+                        arr.map((item,index) => (
+                            <SwiperSlide onClick={() => context?.setCategorySwiper(index)} className={`sectionSwiperFirst__slide ${context?.categorySwiper === index ? 'sectionSwiperFirst__slide_active' : ""}`}>{item}</SwiperSlide>
                         ))
                     }
                 </Swiper>

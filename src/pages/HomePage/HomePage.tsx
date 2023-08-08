@@ -3,6 +3,7 @@
 import SectionSwiperFirst from "./SectionSwiperFirst/SectionSwiperFirst";
 import SectionSearch from "./SectionSearch/SectionSearch";
 import SectionCategory from "./SectionCategory/SectionCategory";
+import SectionSwiperSecond from "./SectionSwiperSecond/SectionSwiperSecond";
 
 
 export const HomePage = () => {
@@ -11,6 +12,7 @@ export const HomePage = () => {
             <SectionSwiperFirst />
             <SectionSearch/>
             <SectionCategory/>
+            <SectionSwiperSecond/>
         </main>
     );
 }

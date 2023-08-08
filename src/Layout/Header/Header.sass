@@ -48,7 +48,7 @@
   .header
     &__container
       justify-content: flex-start
-      max-width: 868px
+      max-width: 100%
       padding: 20px 0 17px 0
     &__reg
       width: 108px
@@ -64,5 +64,22 @@
 
 
 @media (min-width: 1024px)
+  .header
+    &__reg
+      margin-left: 200px
 
+@media (min-width: 1201px)
+  .header
+    &__cart
+      &_second
+        width: 205px
+        height: 55px
+        margin-right: 13px
+    &__reg
+      width: 170px
+    &__h2
+      font-size: 12px
 @media (min-width: 1440px)
+  .header
+    &__h2
+      font-size: 12px

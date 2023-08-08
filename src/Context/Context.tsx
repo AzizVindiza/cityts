@@ -5,6 +5,8 @@ type StateContextType = {
     setChangeBurger: React.Dispatch<React.SetStateAction<boolean>>;
     category : number
     setCategory :React.Dispatch<React.SetStateAction<number>>
+    categorySwiper : number
+    setCategorySwiper : React.Dispatch<React.SetStateAction<number>>
 };
 // type states and function
 
@@ -19,9 +21,11 @@ type ContextProviderProps = {
 
 export const ContextProvider = ({ children }: ContextProviderProps) => {
     const [changeBurger, setChangeBurger] = useState(false);
-    const [category, setCategory] = useState(0);
+    const [category, setCategory] = useState(0); // Choose category in homPage
+    const [categorySwiper, setCategorySwiper] = useState(0); // Choose category in swiper in home page
     const value = {
-        changeBurger, setChangeBurger,category, setCategory
+        changeBurger, setChangeBurger,category, setCategory,
+        categorySwiper, setCategorySwiper
 
     };
 
