@@ -1,0 +1,62 @@
+@import "src/sass/base/mixins"
+
+.sectionSwiperThird
+
+  &__container
+    display: flex
+    column-gap: 14px
+    align-items: center
+    justify-content: center
+    padding-bottom: 100px
+  &__card
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 64px
+    width: 105px
+    background: #00000010
+    border-radius: 6.431px 6.431px 0 0
+  .swiper-wrapper
+    transition-timing-function : linear
+
+
+
+  .swiper-slide
+    text-align: center
+    font-size: 18px
+    background: #fff
+    /* Center slide text vertically */
+    display: flex
+    justify-content: center
+    align-items: center
+
+
+
+
+
+@media (min-width: 481px)
+  .sectionSwiperThird
+    &__container
+     padding-bottom: 77px
+
+@media (min-width: 768px)
+  .sectionSwiperThird
+    &__container
+      padding-bottom: 77px
+    &__card
+     width: 90%
+     height: 100px
+
+@media (min-width: 1024px)
+  .sectionSwiperThird
+    &__container
+     padding-bottom: 77px
+    &__card
+      height: 120px
+
+@media (min-width: 1440px)
+  .sectionSwiperThird
+    &__container
+     padding-bottom: 77px
+    &__card
+      height: 114px

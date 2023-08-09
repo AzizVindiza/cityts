@@ -1,0 +1,152 @@
+@import "src/sass/base/mixins"
+
+.card
+  border-radius: 9.105px
+  padding: 10px 9px
+  background: #FFF
+  box-shadow: 0 2.2762184143066406px 22.762184143066406px 0 rgba(79, 77, 77, 0.10)
+  width: 100%
+  &__image
+    border-radius: 16.23px
+    background: #D9D9D9
+    height: 158px
+    margin-bottom: 12px
+  &__wrapp
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 56px
+  &__h2
+    @include text(600,18px,normal,#000)
+  &__logo
+    width: 28px
+    height: 28px
+  &__wrapper
+    display: flex
+    justify-content: space-between
+  &__left, &__center , &__right
+    align-items: center
+    display: flex
+  &__orange
+    padding-right: 10px
+    text-align: right
+    display: flex
+    align-items: center
+    justify-content: right
+    width: 116px
+    height: 26px
+    @include text(600,16px,normal,#fff)
+    border-radius: 61.013px
+
+    background: #EC9611
+    box-shadow: 22.032419204711914px 5.084404945373535px 6.779205799102783px 0   rgba(255, 255, 255, 0.26) inset, -6.779205799102783px -11.863609313964844px 6.779205799102783px 0px rgba(255, 255, 255, 0.25) inset, -16.948013305664062px 16.948013305664062px 6.779205799102783px 0px #FFA852 inset, 16.948013305664062px -16.948013305664062px 6.779205799102783px 0px #EC9611 inset, -16.948013305664062px 33.896026611328125px 16.948013305664062px 0px rgba(255, 255, 255, 0.25) inset, 16.948013305664062px -8.474006652832031px 40.67523956298828px 0px #EC9611 inset
+  &__blue
+    padding-right: 10px
+    text-align: right
+    display: flex
+    align-items: center
+    justify-content: right
+    width: 116px
+    height: 26px
+    @include text(600,16px,normal,#fff)
+    border-radius: 66.067px
+    background: #07F
+    box-shadow: 23.85747528076172px 5.505569934844971px 7.340761661529541px 0 rgba(255, 255, 255, 0.26) inset, -7.340761661529541px -12.846332550048828px 7.340761661529541px 0px rgba(255, 255, 255, 0.30) inset, -18.351903915405273px 18.351903915405273px 7.340761661529541px 0px #07F inset, 18.351903915405273px -18.351903915405273px 7.340761661529541px 0px #07F inset, -18.351903915405273px 36.70380783081055px 18.351903915405273px 0px rgba(255, 255, 255, 0.25) inset, 18.351903915405273px -9.175951957702637px 44.044559478759766px 0px #07F inset
+
+  &__first
+    position: absolute
+    left: 0
+    border-radius: 73.215px
+    backdrop-filter: blur(9px)
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 46px
+    height: 46px
+    img
+      width: 26px
+      height: 26px
+  &__center-first
+    position: absolute
+    left: 0
+    border-radius: 79.28px
+    backdrop-filter: blur(9px)
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 46px
+    height: 46px
+    img
+      width: 36px
+      height: 36px
+
+  &__left , &__center
+    position: relative
+  &__star
+    width: 27px
+    height: 27px
+
+  &__last
+    margin-top: 25px
+    display: flex
+    justify-content: space-between
+  &__h4
+    @include text(300,12px,normal,rgba(0, 0, 0, 0.50))
+
+
+
+@media (min-width: 768px)
+  .card
+    width: 185px
+    &__wrapp
+      margin-bottom: 31px
+    &__image
+      height: 78px
+    &__h2
+      font-size: 9px
+    &__h4
+      font-size: 6px
+    &__blue , &__orange
+      width: 57px
+      height: 13px
+      font-size: 7px
+      padding-right: 5px
+    &__first, &__center-first
+      width: 23px
+      height: 23px
+      backdrop-filter: blur(2px)
+      img
+        width: 13px
+        height: 13px
+    &__star
+      width: 10px
+      height: 10px
+    &__num
+      font-size: 7px
+
+
+@media (min-width: 1024px)
+  .card
+    width: 235px
+
+    &__logo
+      width: 19px
+      height: 19px
+    &__image
+      height: 106px
+    &__first
+      backdrop-filter: blur(2px)
+      width: 26px
+      height: 26px
+      img
+        width: 15px
+        height: 15px
+    &__center-first
+      backdrop-filter: blur(2px)
+      img
+        width: 15px
+        height: 15px
+
+@media (min-width: 1201px)
+
+@media (min-width: 1440px)

@@ -4,6 +4,9 @@ import SectionSwiperFirst from "./SectionSwiperFirst/SectionSwiperFirst";
 import SectionSearch from "./SectionSearch/SectionSearch";
 import SectionCategory from "./SectionCategory/SectionCategory";
 import SectionSwiperSecond from "./SectionSwiperSecond/SectionSwiperSecond";
+import SectionSwiperThird from "./SectionSwiperThird/SectionSwiperThird";
+import SectionRequest from "./SectionRequest/SectionRequest";
+import SectionGoods from "./SectionGoods/SectionGoods";
 
 
 export const HomePage = () => {
@@ -13,6 +16,9 @@ export const HomePage = () => {
             <SectionSearch/>
             <SectionCategory/>
             <SectionSwiperSecond/>
+            <SectionRequest/>
+            <SectionSwiperThird/>
+            <SectionGoods/>
         </main>
     );
 }
