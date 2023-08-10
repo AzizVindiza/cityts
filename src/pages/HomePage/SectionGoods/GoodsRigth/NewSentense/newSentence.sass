@@ -1,0 +1,115 @@
+@import "src/sass/base/mixins"
+.newSentence
+  &__h2
+    @include text(600,18px,133%,#000)
+  &__h3
+    @include text(500,16px,normal,#fff)
+  &__wrapper
+    display: flex
+    flex-direction: column
+    row-gap: 14px
+  &__filter
+    border-radius: 27px
+    margin: 10px 0
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 5px
+    padding: 6px 14px
+    background: #07F
+    box-shadow: 11.281051635742188px 2.6033196449279785px 3.471092700958252px 0 rgba(255, 255, 255, 0.26) inset, -3.471092700958252px -6.074411869049072px 3.471092700958252px 0px rgba(255, 255, 255, 0.30) inset, -8.677732467651367px 8.677732467651367px 3.471092700958252px 0px #07F inset, 8.677732467651367px -8.677732467651367px 3.471092700958252px 0px #07F inset, -8.677732467651367px 17.355464935302734px 8.677732467651367px 0px rgba(255, 255, 255, 0.25) inset, 8.677732467651367px -4.338866233825684px 20.826557159423828px 0px #07F inset
+  &__popUp
+    width: 100%
+    position: absolute
+    top: 41px
+    z-index: 10
+    border-radius: 7.207px
+    background: #F6F6F6
+    padding: 10px
+    box-shadow: 0 0 20px 0 rgba(156, 156, 156, 0.25)
+  &__quater
+    border-radius: 3.603px
+    border: 0.901px solid #5C5C5C
+    width: 18px
+    height: 18px
+    margin-bottom: 10px
+  &__flex
+    display: flex
+    align-items: center
+    gap: 8px
+  &__filter-block
+    display: flex
+    gap: 10px
+  &__item
+    @include text(400,16px,16px,#000)
+    margin-bottom: 10px
+  &__block
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__left
+    display: flex
+    justify-content: space-between
+    margin-bottom: 17px
+  &__svg
+    width: 30px
+    height: 30px
+  &__inner
+    display: flex
+    flex-direction: column
+    row-gap: 6px
+
+
+  &__h5
+    @include text(400,14px,normal,#000)
+
+@media (min-width: 481px)
+
+
+@media (min-width: 768px)
+
+  .newSentence
+
+    &__filter-block
+      display: none
+    &__block
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 7px
+    &__h2
+      @include text(600,20px,133%,#000)
+    &__filter
+      display: flex
+      justify-content: center
+      align-items: center
+      gap: 5px
+      height: 33px
+      border-radius: 6px
+      background: #07F
+      box-shadow: 11.281051635742188px 2.6033196449279785px 3.471092700958252px 0 rgba(255, 255, 255, 0.26) inset, -3.471092700958252px -6.074411869049072px 3.471092700958252px 0px rgba(255, 255, 255, 0.30) inset, -8.677732467651367px 8.677732467651367px 3.471092700958252px 0px #07F inset, 8.677732467651367px -8.677732467651367px 3.471092700958252px 0px #07F inset, -8.677732467651367px 17.355464935302734px 8.677732467651367px 0px rgba(255, 255, 255, 0.25) inset, 8.677732467651367px -4.338866233825684px 20.826557159423828px 0px #07F inset
+    &__h3
+      @include text(500,14px,normal,#fff)
+    &__wrapper
+      display: flex
+      flex-wrap: wrap
+      flex-direction: row
+      justify-content: space-between
+      row-gap: 10px
+    &__item
+     font-size: 10px
+    &__quater
+      width: 18px
+      height: 18px
+    &__wrpper-first
+      display: flex
+
+@media (min-width: 1024px)
+
+@media (min-width: 1201px)
+
+@media (min-width: 1440px)
+
+
+
