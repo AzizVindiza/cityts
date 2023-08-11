@@ -80,13 +80,16 @@
       margin-bottom: 7px
     &__h2
       @include text(600,20px,133%,#000)
+      width: 215px
     &__filter
+      margin-top: 0
       display: flex
+      width: 218px
       justify-content: center
       align-items: center
       gap: 5px
       height: 33px
-      border-radius: 6px
+      border-radius: 100px
       background: #07F
       box-shadow: 11.281051635742188px 2.6033196449279785px 3.471092700958252px 0 rgba(255, 255, 255, 0.26) inset, -3.471092700958252px -6.074411869049072px 3.471092700958252px 0px rgba(255, 255, 255, 0.30) inset, -8.677732467651367px 8.677732467651367px 3.471092700958252px 0px #07F inset, 8.677732467651367px -8.677732467651367px 3.471092700958252px 0px #07F inset, -8.677732467651367px 17.355464935302734px 8.677732467651367px 0px rgba(255, 255, 255, 0.25) inset, 8.677732467651367px -4.338866233825684px 20.826557159423828px 0px #07F inset
     &__h3
@@ -94,18 +97,22 @@
     &__wrapper
       display: flex
       flex-wrap: wrap
-      flex-direction: row
       justify-content: space-between
+      flex-direction: row
+      gap: 7px
+
       row-gap: 10px
     &__item
      font-size: 10px
     &__quater
       width: 18px
       height: 18px
-    &__wrpper-first
+    &__content
       display: flex
+      justify-content: space-between
 
 @media (min-width: 1024px)
+
 
 @media (min-width: 1201px)
 

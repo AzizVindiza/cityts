@@ -9,10 +9,9 @@ const NewSentence = () => {
     return (
         <div className={'newSentence'}>
             <div className="container newSentence__container">
-                <div className="newSentence__wrapper-first">
+                <div className="newSentence__content">
                     <h2 className="newSentence__h2">Новые предложение </h2>
-                    <div className="newSentence__content">
-                        <div onClick={() => context?.setSort(!context?.sort)} className="newSentence__filter">
+                    <div onClick={() => context?.setSort(!context?.sort)} className="newSentence__filter">
                             <h3 className="newSentence__h3">{context?.sortElement}</h3>
                             <div className={"newSentence__svg"}>
                                 {
@@ -49,9 +48,8 @@ const NewSentence = () => {
                             }
 
                         </div>
-                    </div>
                 </div>
-                <div className="goodsRight__wrapper">
+                <div className="newSentence__wrapper">
                     <Card/>
                     <Card/>
                     <Card/>

@@ -1,11 +1,12 @@
 @import "src/sass/base/mixins"
 
 .card
+  position: relative
   border-radius: 9.105px
   padding: 10px 9px
   background: #FFF
   box-shadow: 0 2.2762184143066406px 22.762184143066406px 0 rgba(79, 77, 77, 0.10)
-  width: 100%
+
   &__image
     border-radius: 16.23px
     background: #D9D9D9
@@ -15,14 +16,26 @@
     display: flex
     align-items: center
     justify-content: space-between
-    margin-bottom: 56px
+    margin-bottom: 5px
   &__h2
-    @include text(600,18px,normal,#000)
-  &__logo
-    width: 28px
-    height: 28px
-  &__wrapper
+    @include text(600,17px,normal,#000)
+  &__block
     display: flex
+    gap: 12px
+  &__logo
+    padding: 4px 5px
+    position: absolute
+    left: 6px
+    top: 30px
+    border-radius: 0 1107.795px 1097.92px 0
+    background: rgba(255, 255, 255, 0.30)
+    backdrop-filter: blur(2.6931817531585693px)
+  &__wrapper
+    position: absolute
+    top: 110px
+    right: 30px
+    display: flex
+    gap: 10px
     justify-content: space-between
   &__left, &__center , &__right
     align-items: center
@@ -33,9 +46,9 @@
     display: flex
     align-items: center
     justify-content: right
-    width: 116px
+    width: 110px
     height: 26px
-    @include text(600,16px,normal,#fff)
+    @include text(600,14px,normal,#fff)
     border-radius: 61.013px
 
     background: #EC9611
@@ -46,9 +59,9 @@
     display: flex
     align-items: center
     justify-content: right
-    width: 116px
+    width: 110px
     height: 26px
-    @include text(600,16px,normal,#fff)
+    @include text(600,14px,normal,#fff)
     border-radius: 66.067px
     background: #07F
     box-shadow: 23.85747528076172px 5.505569934844971px 7.340761661529541px 0 rgba(255, 255, 255, 0.26) inset, -7.340761661529541px -12.846332550048828px 7.340761661529541px 0px rgba(255, 255, 255, 0.30) inset, -18.351903915405273px 18.351903915405273px 7.340761661529541px 0px #07F inset, 18.351903915405273px -18.351903915405273px 7.340761661529541px 0px #07F inset, -18.351903915405273px 36.70380783081055px 18.351903915405273px 0px rgba(255, 255, 255, 0.25) inset, 18.351903915405273px -9.175951957702637px 44.044559478759766px 0px #07F inset
@@ -61,8 +74,8 @@
     display: flex
     justify-content: center
     align-items: center
-    width: 46px
-    height: 46px
+    width: 40px
+    height: 40px
     img
       width: 26px
       height: 26px
@@ -74,8 +87,8 @@
     display: flex
     justify-content: center
     align-items: center
-    width: 46px
-    height: 46px
+    width: 40px
+    height: 40px
     img
       width: 36px
       height: 36px
@@ -85,19 +98,53 @@
   &__star
     width: 27px
     height: 27px
-
+  &__heart
+    width: 28px
+    height: 28px
   &__last
     margin-top: 25px
     display: flex
     justify-content: space-between
   &__h4
     @include text(300,12px,normal,rgba(0, 0, 0, 0.50))
+  &__cost
+    display: flex
+    gap: 5px
+    margin-bottom: 12px
+  &__price
+    @include text(600,17px,normal,#07F)
+  &__throuth
+    @include text(400,17px,normal,rgba(0, 0, 0, 0.60))
+    text-decoration: line-through
+  &__text
+    @include text(400,14px,normal,#000)
 
 
+@media (min-width: 481px)
+  .card
+    &__image
+      height: 236px
+    &__price
+      @include text(600,22px,normal,#07F)
+    &__throuth
+      @include text(400,22px,normal,rgba(0, 0, 0, 0.60))
+      text-decoration: line-through
+    &__text
+      @include text(400,18px,normal,#000)
+    &__wrapper
+      bottom: 160px
+    &__first, &__center-first
+      width: 48px
+      height: 48px
+    &__blue, &__orange
+      width: 145px
+      height: 33px
+    &__last
+      margin-top: 12px
 
 @media (min-width: 768px)
   .card
-    width: 185px
+    width: 174px
     &__wrapp
       margin-bottom: 31px
     &__image
@@ -123,8 +170,33 @@
       height: 10px
     &__num
       font-size: 7px
-
-
+    &__price
+      @include text(600,9px,normal,#07F)
+    &__throuth
+      @include text(400,9px,normal,rgba(0, 0, 0, 0.60))
+      text-decoration: line-through
+    &__text
+      @include text(400, 8px,normal,#000)
+    &__h4
+      @include text(400, 6px,normal,#000)
+    &__wrapper
+      top: 70px
+    &__logo
+      top: 20px
+      width: 57px
+      height: 13px
+      display: flex
+      justify-content: center
+      align-items: center
+    &__wrapp
+      margin-bottom: 3px
+    &__image
+      margin-bottom: 5px
+    &__heart
+      width: 14px
+      height: 14px
+    &__cost
+      margin-bottom: 5px
 @media (min-width: 1024px)
   .card
     width: 235px
@@ -146,7 +218,117 @@
       img
         width: 15px
         height: 15px
+    &__star
+      width: 13px
+      height: 13px
+      align-self: flex-start
+    &__right
+      gap: 4px
+    &__num
+      font-size: 10px
+    &__h2
+      font-size: 12px
+    &__price
+      @include text(600,12px,normal,#07F)
+    &__throuth
+      @include text(400,12px,normal,rgba(0, 0, 0, 0.60))
+      text-decoration: line-through
+    &__text
+      @include text(400, 10px,normal,#000)
+    &__h4
+      @include text(400, 8px,normal,#000)
+    &__wrapper
+      top: 80px
+    &__logo
+      top: 20px
+      width: 71px
+      height: 16px
+    &__wrapp
+      margin-bottom: 8px
+    &__image
+      margin-bottom: 5px
+    &__heart
+      width: 19px
+      height: 19px
+    &__cost
+      margin-bottom: 5px
 
 @media (min-width: 1201px)
+  .card
+    width: 280px
+    &__star
+     width: 13px
+     height: 13px
+     align-self: flex-start
+    &__right
+      gap: 4px
+    &__num
+      font-size: 10px
+    &__h2
+      font-size: 15px
+    &__price
+      @include text(600,14px,normal,#07F)
+    &__throuth
+      @include text(400,14px,normal,rgba(0, 0, 0, 0.60))
+      text-decoration: line-through
+    &__text
+      @include text(400, 12px,normal,#000)
+    &__h4
+      @include text(400, 10px,normal,#000)
+    &__wrapper
+      top: 90px
+    &__logo
+      top: 20px
+      width: 79px
+      height: 16px
+    &__wrapp
+      margin-bottom: 8px
+    &__image
+      margin-bottom: 15px
+      height: 119px
+    &__heart
+      width: 19px
+      height: 19px
+    &__cost
+      margin-bottom: 5px
+    &__orange
+      width: 79px
+      font-size: 10px
+      height: 18px
+    &__blue
+      width: 79px
+      font-size: 10px
+      height: 18px
+    &__first
+      width: 31px
+      height: 31px
+    &__svg
+      width: 17px
+      height: 27px
+    &__center-first
+      width: 31px
+      height: 31px
+    &__svg
+      width: 17px
+      height: 27px
+
 
 @media (min-width: 1440px)
+  .card
+    width: 345px
+    height: 315px
+    &__wrapper
+      top: 100px
+    &__image
+      height: 164px
+    &__logo
+      left: 11px
+      height: 20px
+    &__orange
+      width: 99px
+      font-size: 13px
+      height: 23px
+    &__blue
+      width: 99px
+      font-size: 13px
+      height: 23px
