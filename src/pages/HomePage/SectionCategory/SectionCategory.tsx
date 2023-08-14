@@ -11,7 +11,7 @@ export const SectionCategory = () => {
                 <ul className="sectionCategory__list">
                     {
                         arr.map((item,index) => (
-                            <li onClick={() => context?.setCategory(index)} className={`sectionCategory__item ${context!.category === index ? "sectionCategory__item_active" : ""}`}>{item}</li>
+                            <li key={index} onClick={() => context?.setCategory(index)} className={`sectionCategory__item ${context!.category === index ? "sectionCategory__item_active" : ""}`}>{item}</li>
                         ))
                     }
                 </ul>

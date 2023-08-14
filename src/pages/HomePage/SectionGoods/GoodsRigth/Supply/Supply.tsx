@@ -37,7 +37,7 @@ const Supply = () => {
                                 <div className="newSentence__box">
                                     {
                                         list.map((item) => (
-                                            <div onClick={() => context?.setSortSupply(item)}
+                                            <div key={item} onClick={() => context?.setSortSupply(item)}
                                                  className={'newSentence__flex'}>
                                                 <div className="newSentence__quater">
 

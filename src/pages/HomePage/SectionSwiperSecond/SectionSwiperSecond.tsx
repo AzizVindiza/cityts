@@ -49,17 +49,18 @@ const SectionSwiperSecond : React.FC = () => {
             // when window width is >= 393px
             393: {
                 slidesPerView: 1,
+                spaceBetween: 30
             },
             // when window width is >= 481px
             481: {
                 slidesPerView: 1,
-                spaceBetween: 0,
+                spaceBetween: 30,
                 slideToClickedSlide: true,
             },
             // when window width is >= 768px
             768: {
-                slidesPerView: 3,
-                spaceBetween: 0,
+                slidesPerView: 2,
+                spaceBetween: 30,
                 slideToClickedSlide: true,
             }
         }
@@ -72,7 +73,7 @@ const SectionSwiperSecond : React.FC = () => {
                 <Swiper {...swiperType}
                         className="SectionSwiperSecond__mySwiper"
                 >
-                    <SwiperSlide>
+                    <SwiperSlide >
                         <div className="SectionSwiperSecond__block">
                             <div className="SectionSwiperSecond__picture">
                                 <img src={present} alt="" className="SectionSwiperSecond__img1"/>

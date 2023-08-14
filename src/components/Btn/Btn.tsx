@@ -1,13 +1,16 @@
 import './Btn.sass';
+import React from "react";
 
-export interface BtnProps {
+export interface BtnProps extends  React.HTMLProps<HTMLButtonElement>{
+    children: string
     title : string,
-    theme : string,
-    type : "button" | "submit" | "reset"
+    type : "button" | "submit" | "reset",
+    theme : string
+
 }
 
 const Btn = ({title,theme,type}: BtnProps) => (
-    <button type={type} className={"btn"} data-testid="Btn">
+    <button  type={type} className={"btn"}>
         {title}
     </button>
 );

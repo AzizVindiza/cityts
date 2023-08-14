@@ -38,7 +38,7 @@ const Popular = () => {
                                 <div className="newSentence__box">
                                     {
                                         list.map((item) => (
-                                            <div onClick={() => context?.setSortPopular(item)}
+                                            <div key={item} onClick={() => context?.setSortPopular(item)}
                                                  className={'newSentence__flex'}>
                                                 <div className="newSentence__quater">
 

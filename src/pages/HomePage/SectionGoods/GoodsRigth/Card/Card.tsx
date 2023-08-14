@@ -1,9 +1,9 @@
 import React from 'react';
 import "./card.sass"
-import svg from "./Component 269.svg"
-import svg2 from "./Frame 738001966.svg"
-import logo from "./image 3.svg"
-
+import svg from "./image/Component 269.svg"
+import svg2 from "./image/Frame 738001966.svg"
+import logo from "./image/image 3.svg"
+import photo from "./image/Rectangle 2565.svg"
 const Card = () => {
     return (
         <div className={'card'}>
@@ -29,7 +29,7 @@ const Card = () => {
                 </div>
             </div>
             <div className="card__image">
-                {/*<img src="" alt="" className="card__img"/>*/}
+                <img src={photo} alt="" className="card__img"/>
             </div>
             <div className="card__wrapp">
                 <h2 className="card__h2">Футболка “NIKE”</h2>
@@ -59,7 +59,7 @@ const Card = () => {
                 <p className="card__price">7000c</p>
                 <p className="card__throuth">9500с</p>
             </div>
-            <p className="card__text">Привнесите стиль и комфорт в свой повседневный гардероб с нашей футболкой и комфорт в свой повсе  и комфорт в своdfdg l,a  и комфорт в свой...</p>
+            <p className="card__text">Привнесите стиль и комфорт в свой повседневный гардероб с нашей футболкой и комфорт в свой повсе  и комфорт в  l,a  и комфорт в свой...</p>
             <div className="card__last">
                 <h4 className="card__h4">Опубликовано: 26.06.2023</h4>
                 <h4 className="card__h4">Куплено 671</h4>
