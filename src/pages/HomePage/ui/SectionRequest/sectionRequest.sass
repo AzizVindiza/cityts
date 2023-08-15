@@ -1,0 +1,62 @@
+@import "../../../../app/styles/base/mixins"
+.sectionRequest
+  &__wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__h2
+    @include text(600,20px,16px,#000)
+  &__left
+    display: flex
+    flex-direction: column
+    row-gap: 9px
+  &__inner
+    display: flex
+    gap: 6px
+    align-items: center
+
+  &__h3
+    @include text(400,14px,normal,#0077FF)
+
+
+
+
+@media (min-width: 481px)
+  .sectionRequest
+    &__h2
+      font-size: 21px
+
+@media (min-width: 768px)
+  .sectionRequest
+    &__left
+      flex-direction: row
+      gap: 7px
+
+    &__h2
+      font-size: 24px
+
+@media (min-width: 1024px)
+  .sectionRequest
+    &__h2
+      font-size: 28px
+
+    &__h3
+      font-size: 16px
+
+
+@media (min-width: 1201px)
+  .sectionRequest
+    &__h2
+      font-size: 30px
+
+    &__h3
+      font-size: 18px
+
+
+@media (min-width: 1440px)
+  .sectionRequest
+    &__h2
+      font-size: 32px
+
+    &__h3
+      font-size: 20px

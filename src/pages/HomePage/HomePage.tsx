@@ -1,11 +1,11 @@
 // import {useGetPokemonByNameQuery} from "../../redux/api";
 
-import SectionSwiperFirst from "./SectionSwiperFirst/SectionSwiperFirst";
-import SectionSearch from "./SectionSearch/SectionSearch";
-import SectionCategory from "./SectionCategory/SectionCategory";
-import SectionSwiperSecond from "./SectionSwiperSecond/SectionSwiperSecond";
-import SectionSwiperThird from "./SectionSwiperThird/SectionSwiperThird";
-import SectionRequest from "./SectionRequest/SectionRequest";
+import SectionSwiperFirst from "./ui/SectionSwiperFirst/SectionSwiperFirst";
+import SectionSearch from "./ui/SectionSearch/SectionSearch";
+import SectionCategory from "./ui/SectionCategory/SectionCategory";
+import SectionSwiperSecond from "./ui/SectionSwiperFirst/SectionSwiperSecond/SectionSwiperSecond";
+import SectionSwiperThird from "./ui/SectionSwiperThird/SectionSwiperThird";
+import SectionRequest from "./ui/SectionRequest/SectionRequest";
 import SectionGoods from "./SectionGoods/SectionGoods";
 
 
